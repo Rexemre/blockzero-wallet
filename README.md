@@ -1,21 +1,42 @@
-# Block Zero Wallet
+# BLOCK ZERO · Wallet
 
-Block Zero Wallet provides user-facing wallet functionality for the Block Zero network.
+**Modern BTC code. A second chance at Genesis.**
 
-Block Zero is not Bitcoin. It is an independent, Bitcoin-inspired fair-launch network.
+User-facing wallet for Block Zero — hold, send, and receive **BLOZ** with software you control.
 
-## Principles
+Fair launch. No presale. No insiders.
 
-- No ICO
-- No premine
-- No VC allocation
-- Open source
-- Mineable from genesis
+---
 
 ## Status
 
-Initial repository scaffold. Wallet-fork selection and adaptation plan will be documented here.
+**In development.** Today, wallet functionality ships inside `bitcoind` — use the [testnet mining scripts](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/testnet) or `bitcoin-cli` to create wallets and mine.
+
+A dedicated wallet app (GUI and/or mobile) will land here.
+
+---
+
+## Meanwhile
+
+| Task | How |
+|------|-----|
+| Mine testnet | [Quick Start](https://github.com/Rexemre/blockzero-docs/blob/main/quickstart-mining.md) |
+| Run a node | [Node Guide](https://github.com/Rexemre/blockzero-docs/blob/main/node-guide.md) |
+| CLI wallet | `bitcoind` + `bitcoin-cli -rpcwallet=…` |
+
+---
+
+## Repositories
+
+| Repo | Link |
+|------|------|
+| Core | [blockzero-core](https://github.com/Rexemre/blockzero-core) |
+| Docs | [blockzero-docs](https://github.com/Rexemre/blockzero-docs) |
+| Ops | [blockzero-ops](https://github.com/Rexemre/blockzero-ops) |
+| **Wallet** (here) | [blockzero-wallet](https://github.com/Rexemre/blockzero-wallet) |
+
+---
 
 ## Disclaimer
 
-Block Zero is an experimental open-source blockchain project. BZERO has no guaranteed value, no promised liquidity and no expected return. Participation is voluntary and mainly intended for technical, educational and community purposes.
+Block Zero is open-source software. BLOZ/TBLOZ carry no promised value, liquidity or return.
