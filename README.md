@@ -26,9 +26,59 @@ Fair launch. No presale. No insiders.
 
 ---
 
+## Download & install (GUI wallet)
+
+**Official binaries:** https://github.com/Rexemre/blockzero-core/releases
+
+Download the latest **Windows** zip (`blockzero-*-win64.zip`), extract, run **`bitcoin-qt.exe`**.
+
+### Sync stuck at launch day (June 6)?
+
+Block Zero has **no DNS seeds**. If the wallet shows **100% progress** but **unknown blocks remaining** and the last block is still from **6 Jun 2026**, it has **no peer** to the network.
+
+**Fix (all releases):** create or edit `bitcoin.conf`:
+
+| OS | Path |
+|----|------|
+| Windows | `%LOCALAPPDATA%\BlockZeroMainnet\bitcoin.conf` |
+| Linux / macOS | `~/.blockzero-mainnet/bitcoin.conf` |
+
+Minimum contents:
+
+```ini
+server=1
+txindex=1
+
+[main]
+listen=1
+rpcbind=127.0.0.1
+rpcallowip=127.0.0.1
+rpcport=8332
+addnode=217.160.46.61:8210
+```
+
+Restart the wallet. Height should climb toward the live chain (~1000+ — check https://explorer.bloz.org).
+
+**Verify in Debug console** (Help → Debug window → Console):
+
+```
+getconnectioncount   → should be ≥ 1
+getblockcount        → should match explorer height
+```
+
+If `getconnectioncount` stays 0, your firewall may block outbound **TCP 8210**.
+
+**Easier setup (Windows):** [blockzero-ops `mine-mainnet.ps1`](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/mainnet) creates wallet + config automatically.
+
+### Built-in seed (core v1.0.0-rc10+)
+
+Newer releases embed the mainnet seed as a **fixed fallback peer** — `bitcoin-qt` connects out of the box without `bitcoin.conf`. The `addnode` line above still helps if the seed is unreachable.
+
+---
+
 ## Status
 
-**In development.** Today, wallet functionality ships inside `bitcoind` — use the [testnet mining scripts](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/testnet) or `bitcoin-cli` to create wallets and mine.
+**In development.** Today, wallet functionality ships inside `bitcoind` / `bitcoin-qt` from [blockzero-core](https://github.com/Rexemre/blockzero-core/releases).
 
 A dedicated wallet app (GUI and/or mobile) will land here.
 
@@ -38,9 +88,10 @@ A dedicated wallet app (GUI and/or mobile) will land here.
 
 | Task | How |
 |------|-----|
+| Mine on pool | [pool-mining quickstart](https://github.com/Rexemre/blockzero-ops/blob/main/runbooks/pool-mining-quickstart.md) |
 | Mine testnet | [Quick Start](https://github.com/Rexemre/blockzero-docs/blob/main/quickstart-mining.md) |
 | Run a node | [Node Guide](https://github.com/Rexemre/blockzero-docs/blob/main/node-guide.md) |
-| CLI wallet | `bitcoind` + `bitcoin-cli -rpcwallet=…` |
+| CLI wallet | `bitcoin-cli -rpcwallet=…` |
 
 ---
 
