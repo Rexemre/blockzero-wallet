@@ -1,8 +1,8 @@
 # BLOCK ZERO · Wallet
 
-### Missed 2009? **Start at Block Zero.**
+### **Mine with your CPU** — not a warehouse. **Start at Block Zero.**
 
-User-facing wallet for Block Zero — hold, send, and receive **BLOZ** with software you control.
+Your Block Zero wallet — hold, send, and receive **BLOZ**, then mine on **pool.bloz.org** with the processor you already have. **RandomX** keeps ASIC & GPU farms out.
 
 Fair launch. No presale. No insiders.
 
@@ -43,7 +43,7 @@ rpcport=8332
 addnode=217.160.46.61:8210
 ```
 
-Restart the wallet. Height should climb toward the live chain (**1715+** — check https://explorer.bloz.org).
+Restart the wallet. Height should climb toward the live chain (**1726+** — check https://explorer.bloz.org).
 
 **Verify in Debug console** (Help → Debug window → Console):
 
