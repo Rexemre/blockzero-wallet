@@ -1,36 +1,22 @@
 # BLOCK ZERO · Wallet
 
-**Modern BTC code. A second chance at Genesis.**
+### Missed 2009? **Start at Block Zero.**
 
 User-facing wallet for Block Zero — hold, send, and receive **BLOZ** with software you control.
 
 Fair launch. No presale. No insiders.
 
----
-
-## Official links
-
-| | |
-|---|---|
-| **Website** | https://bloz.org |
-| **Pool** | https://pool.bloz.org *(test release)* |
-| **Explorer** | https://explorer.bloz.org · testnet: https://texplorer.bloz.org |
-| **Bridge** | https://bridge.bloz.org |
-| **Discord** | https://discord.gg/FbJzrwAU2W |
-| **X (Twitter)** | https://x.com/Block_Zero_2009 |
-| **Full list** | [official-links.md](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md) |
-
-**Mainnet seed:** `217.160.46.61:8210`
-
-> **Warning:** Copycat sites (e.g. `.cc` domains) and third-party pools are **not affiliated** with Block Zero — we have no insight into their code and accept **no liability** for malware, wrong-chain mining, fraud, or unfair pool payouts. [Read the full warning →](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md#warning-copycat-sites--unofficial-services)
+**👉 New here? [Join Discord →](https://discord.gg/FbJzrwAU2W)** · **⬇ [Download rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** · **⛏ [Mine on pool](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/mainnet)**
 
 ---
 
 ## Download & install (GUI wallet)
 
-**Official binaries:** https://github.com/Rexemre/blockzero-core/releases
+**Latest Windows build:** **[v1.0.0-rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** — `blockzero-v1.0.0-rc24-windows-x64.zip`
 
-Download the latest **Windows** zip (`blockzero-*-win64.zip`), extract, run **`bitcoin-qt.exe`**.
+Extract and run **`bin\bitcoin-qt.exe`**. MSVC runtime is bundled — no separate VC++ install needed.
+
+All releases: https://github.com/Rexemre/blockzero-core/releases
 
 ### Sync stuck at launch day (June 6)?
 
@@ -57,7 +43,7 @@ rpcport=8332
 addnode=217.160.46.61:8210
 ```
 
-Restart the wallet. Height should climb toward the live chain (~1000+ — check https://explorer.bloz.org).
+Restart the wallet. Height should climb toward the live chain (**1715+** — check https://explorer.bloz.org).
 
 **Verify in Debug console** (Help → Debug window → Console):
 
@@ -76,11 +62,19 @@ Newer releases embed the mainnet seed as a **fixed fallback peer** — `bitcoin-
 
 ---
 
+## Then mine
+
+1. Copy your **`bz1…` address** from the wallet (Receive tab)
+2. Pool mine: [blockzero-ops/scripts/mainnet](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/mainnet) → `./mine-pool.sh bz1YOURADDRESS`
+3. Stats: [pool.bloz.org](https://pool.bloz.org) · Questions: **[Discord](https://discord.gg/FbJzrwAU2W)**
+
+---
+
 ## Status
 
-**In development.** Today, wallet functionality ships inside `bitcoind` / `bitcoin-qt` from [blockzero-core](https://github.com/Rexemre/blockzero-core/releases).
+Wallet functionality ships inside `bitcoind` / `bitcoin-qt` from [blockzero-core](https://github.com/Rexemre/blockzero-core/releases). Latest: **v1.0.0-rc24**.
 
-A dedicated wallet app (GUI and/or mobile) will land here.
+A dedicated standalone wallet app (GUI and/or mobile) may land in this repo later.
 
 ---
 
@@ -92,6 +86,18 @@ A dedicated wallet app (GUI and/or mobile) will land here.
 | Mine testnet | [Quick Start](https://github.com/Rexemre/blockzero-docs/blob/main/quickstart-mining.md) |
 | Run a node | [Node Guide](https://github.com/Rexemre/blockzero-docs/blob/main/node-guide.md) |
 | CLI wallet | `bitcoin-cli -rpcwallet=…` |
+
+---
+
+## Official links
+
+| | |
+|---|---|
+| **Website** | https://bloz.org |
+| **Pool** | https://pool.bloz.org |
+| **Explorer** | https://explorer.bloz.org |
+| **Discord** | https://discord.gg/FbJzrwAU2W |
+| **Full list** | [official-links.md](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md) |
 
 ---
 
@@ -109,3 +115,5 @@ A dedicated wallet app (GUI and/or mobile) will land here.
 ## Disclaimer
 
 Block Zero is open-source software. BLOZ/TBLOZ carry no promised value, liquidity or return.
+
+> **Warning:** Copycat sites (e.g. `.cc` domains) and third-party pools are **not affiliated** with Block Zero. [Read the full warning →](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md#warning-copycat-sites--unofficial-services)
