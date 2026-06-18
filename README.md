@@ -12,9 +12,25 @@ Fair launch. No presale. No insiders.
 
 ## Download & install (GUI wallet)
 
-**Latest Windows build:** **[v1.0.0-rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** — `blockzero-v1.0.0-rc24-windows-x64.zip`
+The same GUI wallet (`bitcoin-qt`, branded **Block Zero**) on both platforms.
 
-Extract and run **`bin\bitcoin-qt.exe`**. MSVC runtime is bundled — no separate VC++ install needed.
+### Windows
+
+**Latest build:** **[v1.0.0-rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** — `blockzero-v1.0.0-rc24-windows-x64.zip`
+
+Extract and run **`bin\Block Zero.exe`**. MSVC runtime is bundled — no separate VC++ install needed.
+
+### macOS (Apple Silicon — M1/M2/M3/M4)
+
+**Latest build:** `blockzero-v1.0.0-rc24-macos-arm64.tar.gz`
+
+One-line install (downloads, sets up `~/.blockzero-mainnet`, removes Gatekeeper quarantine):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Rexemre/blockzero-ops/main/scripts/mainnet/install-macos.sh | bash
+```
+
+Or manually: extract the tarball, drag **`Block Zero.app`** to **Applications**, then right-click → **Open** the first time (unsigned app). Intel Macs: build from source (`doc/build-osx.md`).
 
 All releases: https://github.com/Rexemre/blockzero-core/releases
 
