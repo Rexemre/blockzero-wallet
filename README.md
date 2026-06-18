@@ -6,7 +6,7 @@ Your Block Zero wallet — hold, send, and receive **BLOZ**, then mine on **pool
 
 Fair launch. No presale. No insiders.
 
-**👉 New here? [Join Discord →](https://discord.gg/FbJzrwAU2W)** · **⬇ [Download rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** · **⛏ [Mine on pool](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/mainnet)**
+**👉 New here? [Join Discord →](https://discord.gg/FbJzrwAU2W)** · **⬇ [Download rc28](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc28)** · **⛏ [Mine on pool](https://github.com/Rexemre/blockzero-ops/tree/main/scripts/mainnet)**
 
 ---
 
@@ -16,13 +16,13 @@ The same GUI wallet (`bitcoin-qt`, branded **Block Zero**) on both platforms.
 
 ### Windows
 
-**Latest build:** **[v1.0.0-rc24](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc24)** — `blockzero-v1.0.0-rc24-windows-x64.zip`
+**Latest build:** **[v1.0.0-rc28](https://github.com/Rexemre/blockzero-core/releases/tag/v1.0.0-rc28)** — `blockzero-v1.0.0-rc28-windows-x64.zip`
 
 Extract and run **`bin\Block Zero.exe`**. MSVC runtime is bundled — no separate VC++ install needed.
 
 ### macOS (Apple Silicon — M1/M2/M3/M4)
 
-**Latest build:** `blockzero-v1.0.0-rc24-macos-arm64.tar.gz`
+**Latest build:** `blockzero-v1.0.0-rc28-macos-arm64.tar.gz`
 
 One-line install (downloads, sets up `~/.blockzero-mainnet`, removes Gatekeeper quarantine):
 
@@ -88,7 +88,7 @@ Newer releases embed the mainnet seed as a **fixed fallback peer** — `bitcoin-
 
 ## Status
 
-Wallet functionality ships inside `bitcoind` / `bitcoin-qt` from [blockzero-core](https://github.com/Rexemre/blockzero-core/releases). Latest: **v1.0.0-rc24**.
+Wallet functionality ships inside `bitcoind` / `bitcoin-qt` from [blockzero-core](https://github.com/Rexemre/blockzero-core/releases). Latest: **v1.0.0-rc28**.
 
 A dedicated standalone wallet app (GUI and/or mobile) may land in this repo later.
 
