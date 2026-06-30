@@ -61,5 +61,3 @@ A standalone mobile wallet may land here later.
 | Explorer | https://explorer.bloz.org |
 | All docs | [blockzero-docs](https://github.com/Rexemre/blockzero-docs) |
 | Official links | [official-links.md](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md) |
-
-> Copycat sites and third-party pools are **not affiliated** with Block Zero. [Warning →](https://github.com/Rexemre/blockzero-docs/blob/main/official-links.md#warning-copycat-sites--unofficial-services)
