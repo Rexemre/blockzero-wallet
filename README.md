@@ -9,6 +9,7 @@ Documentation hub for the Block Zero GUI wallet.
 | **Download** | https://github.com/Rexemre/blockzero-core/releases/latest |
 | **Then mine** | [How to Mine BLOZ](https://github.com/Rexemre/blockzero-docs/blob/main/how-to-mine.md) |
 | **Help** | [FAQ](https://github.com/Rexemre/blockzero-docs/blob/main/faq.md) · [Discord](https://discord.gg/FbJzrwAU2W) |
+| **What's new** | v1.0.0-rc38: fresh wallets can send right away, smallest unit is called *rex* · [CHANGELOG](https://github.com/Rexemre/blockzero-docs/blob/main/CHANGELOG.md) |
 
 ---
 
@@ -16,7 +17,7 @@ Documentation hub for the Block Zero GUI wallet.
 
 | Step | Action |
 |------|--------|
-| **Windows** | Download zip → **Extract All** → `Start Block Zero.bat` |
+| **Windows** | Download `blockzero-windows-x64-setup.exe` → run it (one-click installer; the zip still works) |
 | **macOS** | `curl -fsSL …/install-macos.sh \| bash` → open `Block Zero.app` |
 | **Get address** | **Receive** tab → copy `bz1q…` |
 | **Prune or full?** | **Prune** for most users (saves disk) |
